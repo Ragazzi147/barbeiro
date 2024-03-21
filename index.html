@@ -12,38 +12,43 @@
     <div id="barbershop">
         <div id="barber-selection">
             <h2>Escolha um barbeiro:</h2>
-            <div class="barber" id="bruno">
-                <img src="bruno.jpg" alt="Foto do Bruno">
-                <p>Bruno</p>
-            </div>
+            <a href="services.html">
+                <div class="barber" id="bruno">
+                    <img src="bruno.jpg" alt="Foto do Bruno">
+                    <p>Bruno</p>
+                </div>
+            </a>
             <!-- Outros barbeiros aqui -->
         </div>
-        <div id="services" style="display: none;">
-            <h2>Serviços:</h2>
-            <div class="service" id="degrade">
-                <img src="degrade.jpg" alt="Foto do corte degrade">
-                <p>Corte Degrade - R$40</p>
-            </div>
-            <!-- Outros serviços aqui -->
+    </div>
+    <script src="script.js"></script>
+    <div id="services" style="display: none;">
+        <h2>Serviços:</h2>
+        <div class="service" id="degrade">
+            <img src="degrade.jpg" alt="Foto do corte degrade">
+            <p>Corte Degrade - R$40</p>
         </div>
-        <div id="dates" style="display: none;">
-            <h2>Escolha uma data:</h2>
-            <input type="date" id="date-input">
-            <button onclick="showTimes()">Selecionar</button>
-        </div>
-        <div id="times" style="display: none;">
-            <h2>Escolha um horário:</h2>
-            <select id="time-select">
-                <!-- Horários disponíveis aqui -->
-            </select>
-            <button onclick="showForm()">Agendar</button>
-        </div>
-        <div id="form" style="display: none;">
-            <h2>Informações do cliente:</h2>
-            <input type="text" id="name-input" placeholder="Nome">
-            <input type="tel" id="phone-input" placeholder="Telefone">
-            <button onclick="scheduleAppointment()">Confirmar</button>
-        </div>
+        <!-- Outros serviços aqui -->
+        <a href="dates.html">Próximo</a>
+    </div>
+    <div id="dates" style="display: none;">
+        <h2>Escolha uma data:</h2>
+        <input type="date" id="date-input">
+        <a href="times.html"><button>Selecionar</button></a>
+    </div>
+    <div id="times" style="display: none;">
+        <h2>Escolha um horário:</h2>
+        <select id="time-select">
+            <!-- Horários disponíveis aqui -->
+        </select>
+        <a href="form.html"><button>Agendar</button></a>
+    </div>
+    <div id="form" style="display: none;">
+        <h2>Informações do cliente:</h2>
+        <input type="text" id="name-input" placeholder="Nome">
+        <input type="tel" id="phone-input" placeholder="Telefone">
+        <button onclick="scheduleAppointment()">Confirmar</button>
+    </div>
     </div>
     <script src="script.js"></script>
 </body>
